@@ -1,13 +1,14 @@
 * {
     box-sizing: border-box;
-    }
+}
 
+/* = = = Grid Settings = = = */
 
 .container {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     gap: 10px;
-    text-align: center;    
+    text-align: center;
 }
 
 @media (min-width: 780px) {
@@ -15,38 +16,41 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        text-align: center;    
+        text-align: center;
     }
+
     .features {
         text-align: left;
     }
 }
 
+/* = = = Style Settings = = = */
 .price {
     background-color: red;
     color: white;
-    
-
-
 }
 
 .pricing-box {
     background-color: lightgrey;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
 .button {
     background-color: darkblue;
     color: white;
     text-decoration: none;
-     border: 1px solid white;
+    border: 1px solid white;
     border-radius: 30px;
     padding: .2rem 2rem;
-    font-weight: bold; 
+    font-weight: bold;
 }
-.features {    
+
+.features {
     padding: 2rem;
 }
-.name, .price, .description {
-    padding: 1rem .5rem;    
+
+.name,
+.price,
+.description {
+    padding: 1rem .5rem;
 }
