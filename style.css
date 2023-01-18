@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    }
+
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;    
+}
+
+@media (min-width: 780px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        text-align: center;    
+    }
+    .features {
+        text-align: left;
+    }
+}
+
+.price {
+    background-color: red;
+    color: white;
+    
+
+
+}
+
+.pricing-box {
+    background-color: lightgrey;
+    border-radius: 10px;    
+}
+
+.button {
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+     border: 1px solid white;
+    border-radius: 30px;
+    padding: .2rem 2rem;
+    font-weight: bold; 
+}
+.features {    
+    padding: 2rem;
+}
+.name, .price, .description {
+    padding: 1rem .5rem;    
+}
